@@ -1,0 +1,343 @@
+body {  
+    font-family: "Times New Roman";
+    margin: 0;
+    padding: 0;
+  }
+
+  .app-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    /* background:linear-gradient(#f7b5cf,#bab5f7,#fcf695);*/
+    background-image: url("https://collegeinfogeek.com/wp-content/uploads/2018/04/50-personal-website-examples-featured-image.jpg");
+    background-size: cover;
+    background-color:#fcf695 ;
+    position: relative;
+}
+
+ .app-container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-size: cover;
+    background-color: #242030;
+    opacity: 0.7;   
+} 
+
+.step-content {
+    width: 800px;
+    max-width: 1000px;
+    
+    margin-top: 50px;
+    padding: 40px;
+    position: relative;
+    
+}
+
+.step-content::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: black;
+    border-radius: 8px;
+    opacity: 0.6;
+
+}
+.general{
+    color: white !important;
+    z-index: 1;
+    opacity: 0.9;
+}
+
+.step-slide-left {
+    animation: slide 0.7s ease-in-out forwards;
+}
+
+  
+.ant-form-item-label > label {
+    color: white !important;
+}
+
+.ant-steps-item-title {
+    color: white !important;
+  }
+  
+  .add-hobby-btn {
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 16px;
+  }
+  
+  .add-hobby-btn .ant-btn {
+    width: auto;
+    display: flex;
+    align-items: center;
+    background-color: #1890ff;
+    color: white;
+    border-radius: 4px;
+  }
+  
+  .add-hobby-btn .ant-btn:hover {
+    background-color: #40a9ff;
+  }
+  
+  
+  .steps-btn {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .ant-steps-item-title {
+    font-weight: bold;
+    
+  }
+
+  
+  
+  .ant-steps-item-finish .ant-steps-item-tail::after,
+  .ant-steps-item-process .ant-steps-item-tail::after{
+    background-color: white !important;
+  }
+
+  /* Ensure all form inputs have transparent backgrounds and white text */
+.ant-form-item .ant-input,
+.ant-form-item .ant-select-selector,
+.ant-form-item .ant-calendar-picker-input {
+    background-color: transparent !important;
+    z-index: 1;
+    color: white !important; /* Ensure the input text is white */
+}
+.ant-select-selector .ant-select-selection-placeholder {
+    color: white !important; /* Override placeholder color */
+}
+
+/* Apply white color for the text inside the input as well */
+.ant-select-selector {
+    color: white !important;
+}
+
+/* Optional: Adjust height of the Select component */
+.ant-select-selector {
+    height: 44px !important;
+}
+
+/* Ensure placeholder text is white */
+.ant-form-item .ant-input::placeholder,
+.ant-form-item .ant-select-selector::placeholder,
+.ant-form-item .ant-calendar-picker-input input::placeholder {
+    color: white !important; /* Override placeholder color */
+}
+
+
+.ant-input .ant-select-selector .ant-calendar-picker-input:hover {
+    transform: scale(1.05); 
+    border-color: rgb(5, 166, 240); 
+    z-index: 1; 
+    box-shadow: 0 4px 10px rgba(5, 166, 240, 0.5);
+}
+
+
+
+
+
+  .button-container{
+    display: flex;
+    flex-direction: row;
+    width: '800px';
+    justify-content: space-between;
+    align-items: center;
+  }
+/* Style for the entire form item */
+.ant-form-item {
+    color: white; /* Ensure text color is white */
+    margin-bottom: 16px;
+}
+
+/* Typography styling */
+.ant-typography {
+    color: white !important; /* Ensuring typography is white */
+}
+
+/* Switch styling */
+.ant-switch {
+    background-color: brown;
+}
+
+/* Button container */
+.button-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 16px;
+}
+
+.add-hobby-btn {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 16px;
+    padding: 8px;
+}
+
+.add-achievement {
+    display: flex;
+    align-items: center;
+    margin-bottom: 12px;
+}
+
+.add-achievement .ant-btn {
+    background-color: transparent;
+    color: white;
+    border: 1px dashed white;
+    padding: 6px 16px;
+}
+
+.add-achievement .ant-btn:hover {
+    background-color: rgba(24, 144, 255, 0.1);
+    color: white;
+    border-color: #1890ff;
+}
+
+/* Card container styling for added achievements */
+.add-hobby-btn .ant-card {
+    background-color: #333333; /* Dark background */
+    border-radius: 8px;
+    padding: 16px;
+}
+
+/* Space styling between items in form list */
+.ant-space {
+    margin-bottom: 12px;
+}
+
+.textarea {
+    width: 750px;
+    color: white;
+    background-color: transparent !important;
+    border: 1px solid #ffffff;
+    padding: 8px;
+    font-size: 14px;
+}
+
+.textarea::placeholder {
+    color: rgba(228, 213, 213, 0.8); /* Slightly gray placeholder text */
+}
+
+.ant-btn {
+    background-color: #1890ff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 8px 16px;
+}
+
+.ant-btn:hover {
+    background-color: #40a9ff;
+    color: white;
+}
+
+
+.ant-btn + .ant-btn {
+    margin-left: 16px;
+}
+.modal-container {
+    color:black;
+    min-width: 700px; 
+    border-radius: 8px; 
+    padding: 20px;
+    max-height: 80%;
+    overflow-y: auto;
+    background-color: transparent;
+    
+}
+.ant-modal-content {
+    border-radius: 8px; 
+    border: 1px solid white !important;/* Optional: for rounded corners */
+    background-image: linear-gradient(to right,#397FC5,#A7CFF5);
+  }
+  
+.modal-container::-webkit-scrollbar{
+    display: none;
+}
+
+/* Button styling in modal */
+.ant-btn {
+    background-color: #1890ff; /* Blue button */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 8px 16px;
+}
+
+.ant-btn:hover {
+    background-color: #40a9ff;
+    color: white;
+}
+
+.ant-modal-close {
+    color: white;
+}
+
+.ant-modal-title {
+    color:white !important;
+    font-size: 22px;
+    font-weight: bold;
+}
+.card-container{
+    position: relative;
+    border: none;
+    background-color:rgb(78, 64, 64) ;
+    border-radius: 7px;
+    border: none;
+    
+
+}
+.card-container::before{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+}
+  
+  .apn-container {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+
+  }
+  
+  
+  .value {
+    font-weight: 500;
+    min-width: 120px; /* Adjust as needed for consistent label width */
+    color: white !important;
+    font-size: 15px;
+    width: 100px;
+    
+  }
+  
+  .card-title {
+    color:white !important;
+    
+  }
+  
+  
+  .card-list-item {
+    color: white !important;
+  }
+ .card-text{
+    color: white !important;
+ } 
+  .new-joining-date {
+    color: #007bff;
+    font-style: italic;
+  }
+  
